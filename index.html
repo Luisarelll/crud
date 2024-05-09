@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Vehiculos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="crud">
+            <h1 class="title_style">CRUD VEHICULOS</h1>
+
+            <form id="formRegister" class="crud_form">
+                <input type="text" placeholder="ID" id="idInput" class="form_input">
+                <input type="text" placeholder="Type" id="typeInput" class="form_input">
+                <input type="text" placeholder="Brand" id="brandInput" class="form_input">
+                <input type="text" placeholder="Model" id="modelInput" class="form_input">
+                <input type="text" placeholder="Color" id="colorInput" class="form_input">
+                <input type="text" placeholder="Year" id="yearInput" class="form_input">
+                  <div class="button_container">
+                    <button type="submit" id="submitButton" class="button button--primary">Create</button>
+                  </div>  
+            </form>
+
+            <table class="crud_table">
+              <thead>
+                <tr>
+                    <th class="table_header">ID</th>
+                    <th class="table_header">Type</th>
+                    <th class="table_header">Brand</th>
+                    <th class="table_header">Model</th>
+                    <th class="table_header">Color</th>
+                    <th class="table_header">Year</th>
+                    <th class="table_header">Action</th>
+
+                </tr>
+              </thead>
+              
+              <tbody id="tableBody" class="table_body">
+
+              </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
